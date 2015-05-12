@@ -31,4 +31,5 @@ except ImportError:
 	pass
 
 # import any pure python here
+from tcp_sink import tcp_sink
 #
