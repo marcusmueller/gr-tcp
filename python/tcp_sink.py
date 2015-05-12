@@ -38,7 +38,7 @@ class tcp_sink(gr.sync_block):
 
         self.listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.listener.bind((self.bind_addr, self.port))
-        self.listen(1)
+        self.listener.listen(1)
 
     def start(self):
         """
